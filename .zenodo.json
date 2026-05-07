@@ -1,0 +1,27 @@
+{
+    "title": "Code for: Hierarchical Landscape-Water Quality-Biota Pathways - A Hybrid SEM-Random Forest Framework for
+  Watershed Management Target Derivation",
+    "description": "R analysis code accompanying the manuscript published in Journal of Environmental Management (2026).
+   Implements descriptive statistics, PCA, RDA + variance partitioning, structural equation modeling, and four ML model
+  benchmarks (RF, BRT, SVM, LR) with partial dependence plots for catchment-scale aquatic ecosystem health analysis in
+  the Nakdong River basin.",
+    "license": "MIT",
+    "upload_type": "software",
+    "access_right": "open",
+    "keywords": [
+      "Random Forest",
+      "Structural Equation Modeling",
+      "watershed management",
+      "aquatic ecosystem health",
+      "landscape ecology",
+      "non-point source pollution",
+      "machine learning",
+      "Nakdong River"
+    ],
+    "creators": [
+      {"name": "Kim, Gyobeom", "affiliation": "Yonsei University"},
+      {"name": "Kim, Kyoung-Ho", "affiliation": "Korea Environment Institute"},
+      {"name": "Park, Junyu", "affiliation": "Yonsei University"},
+      {"name": "Kim, Yeonjoo", "affiliation": "Yonsei University"}
+    ]
+  }
