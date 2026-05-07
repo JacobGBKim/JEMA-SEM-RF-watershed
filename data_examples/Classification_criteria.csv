@@ -1,0 +1,6 @@
+﻿Class,Environmental status,TDI,BMI,FAI
+A,Excellent,90 ≦ TDI ≦ 100,80 ≦ BMI ≦ 100,80 ≦ FAI < 100
+B,Good,70 ≦ TDI < 90,65 ≦ BMI < 80,60 ≦ FAI < 80
+C,Fair,50 ≦ TDI < 70,50 ≦ BMI < 65,40 ≦ FAI < 60
+D,Poor,30 ≦ TDI < 50,35 ≦ BMI < 50,20 ≦ FAI < 40
+E,Very poor,0 ≦ TDI < 30,0 ≦ BMI < 35,0 ≦ FAI < 20

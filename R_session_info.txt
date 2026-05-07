@@ -1,0 +1,91 @@
+R Environment and Package Requirements
+======================================
+
+Recommended R version: >= 4.2.0
+Tested with: R 4.2.0 (Windows 11)
+
+This file lists the R packages required by the seven analysis scripts in
+./scripts/. Versions noted are those used in the published analysis;
+the framework is expected to work with newer versions of the same packages.
+
+
+CORE DATA HANDLING
+------------------
+tidyverse        >= 2.0.0   (umbrella for dplyr, tidyr, readr, stringr, ggplot2)
+dplyr            >= 1.1.0
+tidyr            >= 1.3.0
+readr            >= 2.1.0
+stringr          >= 1.5.0
+
+
+VISUALIZATION
+-------------
+ggplot2          >= 3.4.0
+ggpubr           >= 0.6.0
+ggrepel          >= 0.9.0
+gridExtra        >= 2.3
+grid             (base)
+
+
+STATISTICAL TESTS
+-----------------
+rstatix          >= 0.7.0
+car              >= 3.1.0     (VIF diagnostics)
+
+
+MULTIVARIATE ANALYSIS
+---------------------
+FactoMineR       >= 2.7       (PCA — script 02)
+factoextra       >= 1.0.7     (PCA visualization)
+vegan            >= 2.6.0     (RDA + VP — script 03)
+
+
+STRUCTURAL EQUATION MODELING
+-----------------------------
+lavaan           >= 0.6-15    (SEM — script 04)
+lavaanPlot       >= 0.6.0     (SEM diagram visualization)
+
+
+MACHINE LEARNING
+----------------
+caret            >= 6.0-94    (unified ML framework)
+ranger           >= 0.15.0    (Random Forest)
+gbm              >= 2.1.8     (Boosted Regression Trees)
+kernlab          >= 0.9-32    (Support Vector Machines)
+ROCR             >= 1.0-11    (ROC analysis — script 07)
+pROC             >= 1.18.0    (ROC analysis — scripts 05, 06)
+
+
+PARALLEL / UTILITIES
+--------------------
+doParallel       >= 1.0.17
+foreach          >= 1.5.2
+digest           >= 0.6.31    (RF caching — script 06)
+
+
+PARTIAL DEPENDENCE PLOTS
+------------------------
+pdp              >= 0.8.1     (Figure S4 — script 07)
+
+
+INSTALLATION (one-shot)
+-----------------------
+
+install.packages(c(
+  "tidyverse", "dplyr", "tidyr", "readr", "stringr",
+  "ggplot2", "ggpubr", "ggrepel", "gridExtra",
+  "rstatix", "car",
+  "FactoMineR", "factoextra", "vegan",
+  "lavaan", "lavaanPlot",
+  "caret", "ranger", "gbm", "kernlab", "ROCR", "pROC",
+  "doParallel", "foreach", "digest", "pdp"
+))
+
+
+REGENERATING THIS FILE
+----------------------
+
+After installing the packages and running any of the scripts, you can
+regenerate this file with the actual versions used on your system:
+
+  sink("R_session_info.txt"); print(sessionInfo()); sink()

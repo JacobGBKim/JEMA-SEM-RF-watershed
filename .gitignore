@@ -1,0 +1,79 @@
+# =============================================================================
+# .gitignore for Code_Data_for_GitHub
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Restricted data (kept physically OUTSIDE this repository)
+# -----------------------------------------------------------------------------
+# Restricted CSVs (AEHI scores from NIER and raw catchment water quality)
+# live in ../data_local/, a sibling folder. The defensive entries below
+# guard against the data folder accidentally being recreated inside the
+# repo (e.g., by a copy-paste mistake) — they will never match anything
+# under normal use.
+data/
+data_local/
+
+# -----------------------------------------------------------------------------
+# Script outputs (regenerated on each run; not version-controlled)
+# -----------------------------------------------------------------------------
+# Per-AEHI outputs from script 07_RF_PDP_figureS4.R
+TDI_*.csv
+TDI_*.pdf
+TDI_*.rds
+BMI_*.csv
+BMI_*.pdf
+BMI_*.rds
+FAI_*.csv
+FAI_*.pdf
+FAI_*.rds
+
+# Aggregated outputs from script 05/07
+Table3_Enhanced_Performance.csv
+TableS6_CV_Results.csv
+
+# Default RStudio plot dump
+Rplots.pdf
+
+# Reproducibility test logs
+test_outputs/
+
+# -----------------------------------------------------------------------------
+# R session files
+# -----------------------------------------------------------------------------
+.Rhistory
+.RData
+.Rapp.history
+.Ruserdata
+*.Rproj.user
+*.Rproj
+.Renviron
+
+# -----------------------------------------------------------------------------
+# OS-generated files
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# IDE / editor folders
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# Temporary / cache files
+# -----------------------------------------------------------------------------
+*.tmp
+*.bak
+*.log
+*.cache
+__pycache__/
